@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import Films from './pages/Films'
 import CardDetail from './components/CardDetail'
+import People from './pages/People'
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Films />} />
         <Route path="/detail/:id" element={<CardDetail />} />
+        <Route path="/people" element={<People />} />
       </Routes>
     </>
   )
