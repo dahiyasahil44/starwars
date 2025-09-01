@@ -15,8 +15,6 @@ export default function Films() {
         dispatch(fetchData("https://swapi.info/api/films"));
     }, [dispatch]);
 
-    // console.log(state);
-    // console.log(state);
 
     return (
         <>

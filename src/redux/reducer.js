@@ -24,7 +24,7 @@ export const fetchReducer = (state=initialStata, action) => {
         case "FILTER_DATA":
             return {
                 ...state,
-                data: state.allData.filter((item) =>
+                allData: state.allData.filter((item) =>
                     item.title?.toLowerCase().includes(action.payload.toLowerCase())
                 ),
             };
